@@ -1,0 +1,1058 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@900&family=Supermercado+One&family=Teko:wght@500&display=swap');
+
+html{
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    min-height: 100%;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#main_box{
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
+    width: 300px;
+    height: 300px;
+    border: 2px;
+    border-color: white;
+}
+
+#wall{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: black;
+    animation-name: fade;
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
+}
+
+#wall.darken{
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-name: out_back;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes out_back{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes fade{
+    0%{opacity: 1;}
+    90%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+#o{
+    position: absolute;
+    top: 30px;
+    left: 75px;
+    width: 40px;
+    height: 70px;
+}
+
+#o_top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#o_bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#o_over{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(11, 9, 22);
+}
+
+#o_left{
+    position: absolute;
+    top: 15px;
+    width: 20px;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    background-color: white;
+}
+#o_left_c{
+    position: absolute;
+    bottom: 17.5px;
+    width: 20px;
+    height: 35px;
+    background-color: rgb(11, 9, 22);
+    animation-name: black_out;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes black_out{
+    0%{}
+    100%{height: 0px;}
+}
+
+#o_right{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 10px;
+    height: 40px;
+    border-radius: 0 5px 5px 0;
+    background-color: white;
+}
+
+#o_middle{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 10px;
+    height: 40px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb(11, 9, 22);
+}
+
+#over_animation{
+    position: absolute;
+    height: 30px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    background-color: rgb(11, 9, 22);
+    animation-name: black_out;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#u{
+    position: absolute;
+    top: 30px;
+    left: 125px;
+    width: 40px;
+    height: 70px;
+}
+
+#u_middle{
+    position: absolute;
+    bottom: 20px;
+    height: 22px;
+    width: 20px;
+    left: 10px;
+    background-color: rgb(11, 9, 22);
+}
+
+#u_left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 50px;
+    background-color: white;
+}
+
+#u_right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15px;
+    height: 50px;
+    background-color: white;
+}
+
+#r{
+    position: absolute;
+    top: 30px;
+    left: 175px;
+    width: 40px;
+    height: 70px;
+}
+
+#r_left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 70px;
+    background-color: white;
+}
+
+#r_ball{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    background-color: white;
+}
+
+#r_m_ball{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    width: 12.5px;
+    height: 20px;
+    border-radius: 0 50% 50% 0 ;
+    background-color: rgb(11, 9, 22);
+}
+
+#r_bottom_left{
+    position: absolute;
+    right: 0;
+    bottom: 2.5px;
+    height: 30px;
+    width: 25px;
+    border-radius: 0 50% 0 0;
+    background-color: white;
+}
+
+#r_bottom_middle{
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    height: 27.5px;
+    width: 10px;
+    border-radius: 0 5px 0 0;
+    background-color: rgb(11, 9, 22);
+}
+
+#r_bottom_bottom{
+    position: absolute;
+    bottom: 0;
+    right: -2.5px;
+    width: 15px;
+    height: 2.5px;
+    background-color: white;
+}
+
+#r_bottom_bottom_l{
+    position: absolute;
+    bottom: 0;
+    top: -2.5px;
+    left: -2.5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#r_bottom_bottom_r{
+    position: absolute;
+    bottom: 0;
+    top: -2.5px;
+    right: -2.5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(11, 9, 22);
+}
+
+#r_animation{
+    position: absolute;
+    bottom: 0;
+    right: -2.5px;
+    width: 20px;
+    height: 25px;
+    background-color: rgb(11, 9, 22);
+    animation-name: black_out;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#p{
+    position: absolute;
+    width: 58px;
+    height: 150px;
+    left: -83px;
+    bottom: 20px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 150px;
+    cursor: default;
+}
+
+#l{
+    position: absolute;
+    width: 58px;
+    height: 150px;
+    left: -15px;
+    bottom: 20px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 150px;
+    cursor: default;
+}
+
+#a{
+    position: absolute;
+    width: 58px;
+    height: 150px;
+    left: 53px;
+    bottom: 20px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 150px;
+    cursor: default;
+}
+
+#n{
+    position: absolute;
+    width: 58px;
+    height: 150px;
+    left: 121px;
+    bottom: 20px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 150px;
+    cursor: default;
+}
+
+#e{
+    position: absolute;
+    width: 58px;
+    height: 150px;
+    left: 189px;
+    bottom: 20px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 150px;
+    cursor: default;
+}
+
+#t{
+    position: absolute;
+    width: 58px;
+    height: 150px;
+    left: 257px;
+    bottom: 20px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 150px;
+    cursor: default;
+}
+
+#s{
+    position: absolute;
+    width: 58px;
+    height: 150px;
+    left: 325px;
+    bottom: 20px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 150px;
+    cursor: default;
+}
+
+#earth{
+    position: absolute;
+    top: 50%;
+    max-width: 100%;
+    animation-name: rotate_right;
+    animation-duration: 450s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate_right {
+    0%{}
+    100%{transform: rotate(360deg);}
+}
+
+#planets{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes down {
+    0%{}
+    100%{top: 5px;}
+}
+
+#astr{
+    position: absolute;
+    top: 50%;
+    margin-top: -190px;
+    margin-left: 170px;
+    display: block;
+    width: 150px;
+    height: 160px;
+    opacity: 0;
+    animation-name: foutu;
+    animation-duration: 1s;
+    animation-delay: 5.5s;
+    animation-fill-mode: forwards;
+    display: flex;
+}
+
+#astr.animation_af{
+    animation: animation_af 5s infinite;
+    opacity: 1;
+}
+
+@keyframes animation_af{
+    0%{transform: rotate(-3deg);}
+    50%{transform: rotate(0deg);}
+    100%{transform: rotate(-3deg);}
+}
+
+@keyframes foutu{
+    0%{opacity: 0; transform: rotate(0deg);}
+    100%{opacity: 1; transform: rotate(-3deg);}
+}
+
+#explore{
+    position: absolute;
+    top: 50%;
+    margin-top: -210px;
+    margin-left: 550px;
+    opacity: 0;
+    width: 0px;
+    height: 32.5px;
+    background-color: rgb(199, 242, 255);
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    justify-content: center;
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    animation-name: fout;
+    animation-duration: 1s;
+    animation-delay: 5.5s;
+    animation-fill-mode: forwards;
+    cursor: default;
+}
+
+
+@keyframes fade_o{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@keyframes fout{
+    0%{opacity: 0; width: 0;}
+    100%{opacity: 0.8; width: 95px;}
+}
+
+#explore_c{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#mark{
+    position: absolute;
+    left: 75px;
+    top: 5px;
+    font-size: 25px;
+    animation-name: mark;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mark{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#question{
+    position: absolute;
+    top: 50%;
+    margin-top: -170px;
+    margin-left: 550px;
+    width: 95px;
+    height: 32.5px;
+}
+
+#question.fade{
+    opacity: 1;
+    animation-delay: 0.4s;
+    animation-name: fade;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+#yes{
+    position: absolute;
+    height: 20px;
+    width: 45px;
+    background-color: rgb(230, 255, 230);
+    border-radius: 5px 5px 5px 5px;
+    opacity: 0;
+    animation-name: afteran;
+    animation-duration: 1s;
+    animation-delay: 8.5s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    font-size: 17px;
+    vertical-align: middle;
+    line-height: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#yes:hover{
+    transform: scale(1.1);
+}
+
+#no:hover{
+    transform: scale(1.1);
+}
+
+#no{
+    position: absolute;
+    right: 0;
+    height: 20px;
+    width: 45px;
+    background-color: rgb(255, 232, 232);
+    border-radius: 5px 5px 5px 5px;
+    opacity: 0;
+    animation-name: afteran;
+    animation-duration: 1s;
+    animation-delay: 8.5s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    font-size: 17px;
+    vertical-align: middle;
+    line-height: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+@keyframes afteran{
+    0%{opacity: 0;}
+    100%{opacity: 0.8;}
+}
+
+#okey{
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    color: white;
+    opacity: 0;
+    cursor: default;
+}
+
+#okey.appear{
+    animation-name: appear_ok;
+    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear_ok {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@media (max-width: 660px){
+
+    #explore{
+        margin-left: 120px;
+    }
+    #question{
+        margin-left: 120px;
+    }
+
+}
+
+@media (max-width: 500px){
+
+    #earth{
+        width: 100%;
+    }
+    #astr{
+        margin-left: 150px;
+    }
+    #explore{
+        margin-left: 100px;
+    }
+    #question{
+        margin-left: 100px;
+    }
+    #main_box{
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 460px){
+
+    #astr{
+        margin-left: 100px;
+        margin-top: -205px;
+    }
+    #explore{
+        margin-left: 10px;
+        margin-top: -225px;
+    }
+    #question{
+        margin-top: -185px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 420px){
+
+    #astr{
+        margin-left: 100px;
+        margin-top: -195px;
+    }
+    #explore{
+        margin-left: 10px;
+        margin-top: -215px;
+    }
+    #question{
+        margin-top: -175px;
+        margin-left: 10px;
+    }
+
+    #main_box{
+        transform: scale(0.8);
+    }
+
+}
+
+@media (max-width: 380px){
+
+    #astr{
+        margin-left: 100px;
+        margin-top: -185px;
+    }
+    #explore{
+        margin-left: 10px;
+        margin-top: -205px;
+    }
+    #question{
+        margin-top: -165px;
+        margin-left: 10px;
+    }
+
+    #main_box{
+        transform: scale(0.7);
+    }
+
+}
+
+#jupiter{
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    height: 200px;
+    opacity: 0;
+    image-rendering: optimizeQuality;
+}
+
+#jupiter.appear{
+    animation-name: jupiter_ok;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes jupiter_ok {
+    0%{opacity: 0;}
+    100%{opacity: 1;;}
+}
+
+#wing_1{
+    position: absolute;
+    height: 1060px;
+    top: -325px;
+    right: 50%;
+    margin-right: -2100px;
+}
+#wing_2{
+    position: absolute;
+    height: 1060px;
+    bottom: -325px;
+    left: 50%;
+    margin-left: -2100px;
+}
+
+#wing_1.after{
+    animation-name: out_in;
+    animation-duration: 2s;
+}
+#wing_2.after{
+    animation-name: in_out;
+    animation-duration: 2s;
+}
+
+@keyframes in_out{
+    0%{}
+    50%{margin-left: -910px;}
+    100%{}
+}
+
+@keyframes out_in{
+    0%{}
+    50%{margin-right: -910px;}
+    100%{}
+}
+
+#transition{
+    position: absolute;
+    background-color: black;
+    height: 2000px;
+    top: 50%;
+    margin-top: -1000px;
+    width: 500px;
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+
+#transition.after_b{
+    animation-name: transition;
+    animation-delay: 1s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes transition {
+    0%{}
+    5%{opacity: 1;}
+    100%{width: 100%; transform: rotate(-0deg); opacity: 1;}
+}
+
+#transition_white{
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+}
+
+#transition_white.after_c{
+    animation-name: transition_w;
+    animation-delay: 1.5s;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes transition_w {
+    0%{}
+    5%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+
+#corner{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+
+}
+
+#sun{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 500px;
+    height: 500px;
+    margin-left: -150px;
+    margin-bottom: -150px;
+}
+
+#over_sun{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    left: 30px;
+    bottom: 230px;
+    transform: rotate(45deg);
+}
+
+#over_sun_1{
+    position: absolute;
+    width: 70px;
+    height: 500px;
+    background-color: black;
+    left: 290px;
+    bottom: 0px;
+}
+
+#over_sun_2{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    left: 0px;
+    bottom: 290px;
+}
+
+#over_sun_3{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    left: -330px;
+    bottom: 230px;
+    transform: rotate(-45deg);
+}
+
+#over_sun_4{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    left: 30px;
+    bottom: -230px;
+    transform: rotate(-45deg);
+}
+
+#ring_1{
+    position: absolute;
+    width: 810px;
+    height: 50px;
+    bottom: 50px;
+    left: -205px;
+    border-radius: 50%;
+    background-color: white;
+    transform: rotate(-20deg)
+}
+
+#ring_1_i{
+    position: absolute;
+    width: 809.5px;
+    height: 49.5px;
+    bottom: 0.5px;
+    left: 0.5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+
+#ring_2{
+    position: absolute;
+    width: 910px;
+    height: 70px;
+    bottom: 59.5px;
+    left: -205px;
+    border-radius: 50%;
+    background-color: white;
+    transform: rotate(-20deg)
+}
+
+#ring_2_i{
+    position: absolute;
+    width: 909.5px;
+    height: 69.5px;
+    bottom: 0.5px;
+    left: 0.5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#ring_3{
+    position: absolute;
+    width: 1010px;
+    height: 90px;
+    bottom: 69.5px;
+    left: -205px;
+    border-radius: 50%;
+    background-color: white;
+    transform: rotate(-20deg)
+}
+
+#ring_3_i{
+    position: absolute;
+    width: 1009.5px;
+    height: 89.5px;
+    bottom: 0.5px;
+    left: 0.5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#ring_4{
+    position: absolute;
+    width: 1110px;
+    height: 110px;
+    bottom: 79.5px;
+    left: -205px;
+    border-radius: 50%;
+    background-color: white;
+    transform: rotate(-20deg)
+}
+
+#ring_4_i{
+    position: absolute;
+    width: 1109.5px;
+    height: 109.5px;
+    bottom: 0.5px;
+    left: 0.5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#ring_5{
+    position: absolute;
+    width: 1210px;
+    height: 130px;
+    bottom: 89.5px;
+    left: -205px;
+    border-radius: 50%;
+    background-color: white;
+    transform: rotate(-20deg)
+}
+
+#ring_5_i{
+    position: absolute;
+    width: 1209.5px;
+    height: 129.5px;
+    bottom: 0.5px;
+    left: 0.5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#ring_6{
+    position: absolute;
+    width: 1310px;
+    height: 150px;
+    bottom: 99.5px;
+    left: -205px;
+    border-radius: 50%;
+    background-color: white;
+    transform: rotate(-20deg)
+}
+
+#ring_6_i{
+    position: absolute;
+    width: 1309.5px;
+    height: 149.5px;
+    bottom: 0.5px;
+    left: 0.5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#ring_7{
+    position: absolute;
+    width: 1410px;
+    height: 170px;
+    bottom: 109.5px;
+    left: -205px;
+    border-radius: 50%;
+    background-color: white;
+    transform: rotate(-20deg)
+}
+
+#ring_7_i{
+    position: absolute;
+    width: 1409.5px;
+    height: 169.5px;
+    bottom: 0.5px;
+    left: 0.5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#ring_8{
+    position: absolute;
+    width: 1510px;
+    height: 190px;
+    bottom: 119.5px;
+    left: -205px;
+    border-radius: 50%;
+    background-color: white;
+    transform: rotate(-20deg)
+}
+
+#ring_8_i{
+    position: absolute;
+    width: 1509.5px;
+    height: 189.5px;
+    bottom: 0.5px;
+    left: 0.5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#string_1{
+    position: absolute;
+    background-color: white;
+    transform: rotate(-18deg);
+    width: 500px;
+    left: -137px;
+    bottom: -31px;
+    height: 0.2px;
+}
+
+#stars{
+    position: absolute;
+    height: 120%;
+    top: -20px;
+}
+
+#video_z{
+    position: absolute;
+    height: 130%;
+    top: -100px;
+    opacity: 0;
+}
+
+#video_z.in{
+    animation-delay: 1.5s;
+    animation-name: stop;
+    animation-fill-mode: forwards;
+}
+
+@keyframes stop {
+    0%{}
+    5%{opacity: 1;}
+    100%{opacity: 1;}    
+}
+
+#over_flow{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+
