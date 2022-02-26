@@ -6,7 +6,7 @@ html{
 }
 
 body{
-    min-height: 100%;
+    min-height: 1000px;
     background-color: black;
     overflow: hidden;
     display: flex;
@@ -694,17 +694,17 @@ body{
 
 #wing_1{
     position: absolute;
-    height: 1060px;
-    top: -325px;
+    width: 1500px;
+    top: -400px;
     right: 50%;
     margin-right: -2100px;
 }
 #wing_2{
     position: absolute;
-    height: 1060px;
-    bottom: -325px;
+    width: 1500px;
+    top: -100px;
     left: 50%;
-    margin-left: -2100px;
+    margin-left: -2200px;
 }
 
 #wing_1.after{
@@ -718,13 +718,13 @@ body{
 
 @keyframes in_out{
     0%{}
-    50%{margin-left: -910px;}
+    50%{margin-left: -925px;}
     100%{}
 }
 
 @keyframes out_in{
     0%{}
-    50%{margin-right: -910px;}
+    50%{margin-right: -925px;}
     100%{}
 }
 
