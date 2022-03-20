@@ -205,6 +205,14 @@ body{
     animation-iteration-count: infinite;
 }
 
+#enter_1.none{
+    opacity: 0;
+}
+
+#enter_2.none{
+    opacity: 0;
+}
+
 @keyframes opacity_4 {
     0%{opacity: 0;}
     50%{opacity: 0.9;}
