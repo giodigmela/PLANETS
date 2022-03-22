@@ -36,6 +36,13 @@ body{
     background-color: black;
 }
 
+#vh{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 90vh;
+}
+
 ::-webkit-scrollbar {
     width: 7px;
   }
@@ -248,23 +255,7 @@ body{
 
 /*solar system*/
 
-
-#end{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 #blacked{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-}
-
-#blacked_two{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -275,324 +266,6 @@ body{
     background-color: black;
 }
 
-
-#jupiter{
-    position: absolute;
-    opacity: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 600px;
-    margin-left: -300px;
-}
-
-#saturn{
-    position: absolute;
-    opacity: 0;
-    top: 50%;
-    transform: translate(0, -80%);
-    width: 800px;
-    margin-left: -400px;
-}
-
-#venus{
-    position: absolute;
-    opacity: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 600px;
-    margin-left: -280px;
-}
-
-#sun{
-    position: absolute;
-    opacity: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 900px;
-    margin-left: -450px;
-}
-
-#uranus{
-    position: absolute;
-    opacity: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 900px;
-    margin-left: -430px;
-}
-
-#neptune{
-    position: absolute;
-    opacity: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 860px;
-    margin-left: -430px;
-}
-
-#earth{
-    position: absolute;
-    opacity: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 800px;
-    margin-left: -400px;
-}
-
-
-#mercury{
-    position: absolute;
-    opacity: 0;
-    top: 50%;
-    transform: translate(0, -51%);
-    width: 525px;
-    margin-left: -262.5px;
-}
-
-#mars, #saturn{
-    position: absolute;
-    opacity: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 1000px;
-    margin-left: -500px;
-}
-
-#saturn_bg{
-    position: absolute;
-    opacity: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-}
-
-#uranus.one{
-    animation-name: opacity;
-    animation-duration: 1.5s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-}
-
-#neptune.two{
-    animation-name: opacity;
-    animation-duration: 1.5s;
-    animation-delay: 5s;
-    animation-fill-mode: forwards;
-}
-
-#venus.three{
-    animation-name: opacity;
-    animation-duration: 1.5s;
-    animation-delay: 9s;
-    animation-fill-mode: forwards;
-}
-
-#mars.four{
-    animation-name: opacity;
-    animation-duration: 1.5s;
-    animation-delay: 13s;
-    animation-fill-mode: forwards;
-}
-
-#mercury.five{
-    animation-name: opacity;
-    animation-duration: 1.5s;
-    animation-delay: 17s;
-    animation-fill-mode: forwards;
-}
-
-#saturn.six{
-    animation-name: opacity;
-    animation-duration: 1.5s;
-    animation-delay: 21s;
-    animation-fill-mode: forwards;
-}
-
-#saturn_bg.six_half{
-    animation-name: opacity;
-    animation-duration: 0.5s;
-    animation-delay: 25s;
-    animation-fill-mode: forwards;
-}
-
-#jupiter.seven{
-    animation-name: opacity;
-    animation-duration: 1.5s;
-    animation-delay: 25s;
-    animation-fill-mode: forwards;
-}
-
-#earth.eight{
-    animation-name: opacity;
-    animation-duration: 1.5s;
-    animation-delay: 29s;
-    animation-fill-mode: forwards;
-}
-
-#sun.nine{
-    animation-name: opacity;
-    animation-duration: 2.5s;
-    animation-delay: 33s;
-    animation-fill-mode: forwards;
-}
-
-#blacked_two.ten{
-    background-color: black;
-}
-
-@keyframes opacity {
-    0%{opacity: 0;}
-    100%{opacity: 1;}
-}
-
-
-#t_1, #t_3, #t_5, #t_7{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    opacity: 0;
-    top: 50%;
-    margin-top: -15px;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 5px;
-    color: aliceblue;
-}
-
-#t_2, #t_4, #t_6, #t_8{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    opacity: 0;
-    top: 50%;
-    margin-top: -15px;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 10px;
-    color: aliceblue;
-    transform: translateY(-50%);
-}
-
-#t_9{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    opacity: 0;
-    top: 50%;
-    margin-top: -15px;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 10px;
-    font-weight: 600;
-    color: black;
-    transform: translateY(-50%);
-}
-
-#t_1.t_one{
-    animation-name: one;
-    animation-duration: 2.5s;
-    animation-delay: 2.5s;
-    animation-fill-mode: forwards;
-}
-
-#t_2.t_two{
-    animation-name: two;
-    animation-duration: 2.5s;
-    animation-delay: 6.5s;
-    animation-fill-mode: forwards;
-}
-
-#t_3.t_three{
-    animation-name: one;
-    animation-duration: 2.5s;
-    animation-delay: 10.5s;
-    animation-fill-mode: forwards;
-}
-
-#t_4.t_four{
-    animation-name: two;
-    animation-duration: 2.5s;
-    animation-delay: 14.5s;
-    animation-fill-mode: forwards;
-}
-
-#t_5.t_five{
-    animation-name: one;
-    animation-duration: 2.5s;
-    animation-delay: 18.5s;
-    animation-fill-mode: forwards;
-}
-
-#t_6.t_six{
-    animation-name: two;
-    animation-duration: 2.5s;
-    animation-delay: 22.5s;
-    animation-fill-mode: forwards;
-}
-
-#t_7.t_seven{
-    animation-name: one;
-    animation-duration: 2.5s;
-    animation-delay: 26.5s;
-    animation-fill-mode: forwards;
-}
-
-#t_8.t_eight{
-    animation-name: two;
-    animation-duration: 2.5s;
-    animation-delay: 30.5s;
-    animation-fill-mode: forwards;
-}
-
-#t_9.t_nine{
-    letter-spacing: 10px;
-    animation-name: two;
-    animation-duration: 3.5s;
-    animation-delay: 34.5s;
-    animation-fill-mode: forwards;
-}
-
-
-@keyframes one {
-    0%{opacity: 0; letter-spacing: 5px;}
-    100%{opacity: 1; letter-spacing: 10px;}
-}
-
-@keyframes two {
-    0%{opacity: 0; letter-spacing: 10px;}
-    100%{opacity: 1; letter-spacing: 5px;}
-}
-
-#over_transition_r{
-    position: absolute;
-    opacity: 0;
-    width: 100%;
-    top: 50%;
-    margin-top: 40px;
-    border-radius: 5px;
-    height: 30px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-    color: black;
-    letter-spacing: 15px;
-    text-align: center;
-    animation-name: opacity_n;
-    animation-duration: 3s;
-    animation-delay: 75s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-    cursor: pointer;
-}
-
-@keyframes opacity_n {
-    0%{opacity: 0;}
-    50%{opacity: 1;}
-    100%{opacity: 0;}
-}
 
 #blacked_over{
     position: absolute;
@@ -615,7 +288,7 @@ body{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 90vh;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -624,7 +297,7 @@ body{
 
 #black_hole{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     object-fit: cover;
     position: absolute;
     top: 0px;
@@ -632,23 +305,11 @@ body{
 
 #black_hole_text{
     position: absolute;
-    opacity: 0;
-    font-family: 'Roboto', sans-serif;
-    line-height: 100%;
-    letter-spacing: 15px;
-    font-size: 30px;
+    line-height: 60vh;
+    font-size: 50px;
     color: aliceblue;
-    font-weight: bold;
-    line-height: 100vh;
-    animation-name: one_h;
-    animation-duration: 5s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes one_h {
-    0%{opacity: 0; letter-spacing: 7px;}
-    100%{opacity: 1; letter-spacing: 9px;}
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
 }
 
 #black_hole_shadow{
@@ -661,9 +322,9 @@ body{
 
 #long_galaxy_div{
     position: absolute;
-    top: 100vh;
+    top: 0;
     width: 100%;
-    height: 3000px;
+    height: 2510px;
     display: flex;
     overflow: hidden;
     justify-content: center;
@@ -691,8 +352,15 @@ body{
     position: absolute;
     width: 100%;
     height: 250px;
-    bottom: 0px;
+    bottom: 510px;
     background-image: linear-gradient(to bottom, rgba(255,0,0,0), black);
+}
+#long_galaxy_shadow_3{
+    position: absolute;
+    width: 100%;
+    height: 510px;
+    bottom: 0px;
+    background-color: black;
 }
 
 #section_1{
@@ -711,12 +379,24 @@ body{
 
 h1{
     position: absolute;
-    top: 280px;
+    top: 210px;
     left: 140px;
     height: 10px;
-    width: 10px;
+    width: 100vh;
     opacity: 0;
     transition: 1s;
+}
+
+#gray_p{
+    position: absolute;
+    top: 205px;
+    width: 225px;
+    left: 115px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    border-radius: 25px;
+    outline: rgb(69, 103, 255) solid 2px;
 }
 
 h2{
@@ -770,6 +450,7 @@ h5{
 #rocket{
     position: absolute;
     width: 60px;
+    top: -70px;
     height: 100px;
     image-rendering: pixelated;
     transform: rotate(110deg);
@@ -996,7 +677,7 @@ h5[data-scroll="in"]{
     position: absolute;
     top: 2002.5px;
     width: 98%;
-    height: 500px;
+    height: 400px;
     overflow: hidden;
     border-radius: 15px;
 }
@@ -1005,8 +686,9 @@ h5[data-scroll="in"]{
     position: absolute;
     top: 2000px;
     width: 98.3%;
-    height: 505px;
+    height: 405px;
     background-color: rgb(212, 188, 136);
+    overflow: hidden;
     border-radius: 15px;
 }
 .slides{
@@ -1035,7 +717,7 @@ h5[data-scroll="in"]{
     position: absolute;
     width: 100%;
     height: 500px;
-    top: 460px;
+    top: 360px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -1086,7 +768,7 @@ h5[data-scroll="in"]{
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 460px;
+    margin-top: 360px;
 }
 
 .navigation-auto div{
@@ -1283,12 +965,11 @@ h6{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(212, 188, 136);
+    background-color: rgb(0, 0, 0);
     text-align: center;
-    color: aliceblue;
+    letter-spacing: 5px;
     font-family: 'Kanit', sans-serif;
     line-height: 500px;
-    font-size: 30px;
 }
 @keyframes display_2 {
     0%{opacity: 1; width: 100%; height: 100%;}
@@ -1311,22 +992,245 @@ h6[data-scroll="in"]{
     height: 500px;
     bottom: 0;
     text-align: center;
-    color: aliceblue;
+    color: black;
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: rgb(212, 188, 136);
+    background-color: black;
     font-family: 'Kanit', sans-serif;
     line-height: 500px;
     font-size: 70px;
     font-weight: bold;
 }
 
-#all_planet{
+
+#long_galaxy_div_2{
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 2410px;
     width: 100%;
-    height: 500px;
-    object-fit: cover;
-    transform: translateY(-50%);
+    height: 2500px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
+#sections{
+    position: absolute;
+    opacity: 0;
+    width: 70%;
+    height: 50px;
+    bottom: 100px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+#section_bg{
+    position: absolute;
+    opacity: 0;
+    width: 72%;
+    height: 50px;
+    bottom: 100px;
+    border-radius: 25px;
+    outline: aliceblue solid 1px;
+    animation-name: opacity_s;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacity_s {
+    0%{opacity: 0;}
+    100%{opacity: 0.5;}
+}
+
+#planets_s.w_h_1{
+    width: 100px;
+    height: 100px;
+}
+
+#dwarf_planets_s.w_h_4{
+    height: 100px;
+}
+
+#sun_s.w_h_1{
+    width: 100px;
+    height: 100px;
+}
+
+#hypotetical_s.w_h_1{
+    width: 100px;
+    height: 100px;
+}
+
+#moons_s.w_h_1{
+    width: 100px;
+    height: 100px;
+}
+
+#asteroids_comets_meteors_s.w_h_2{
+    height: 100px;
+}
+
+#beyond_our_solar_system_s.w_h_3{
+    height: 100px;
+}
+
+
+#planets_s{
+
+    height: 30px;
+    overflow: hidden;
+    width: 75px;
+    border-radius: 15px;
+    background: rgba(141, 141, 141, 0.2);
+    color: rgb(232, 234, 236);
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    outline: rgb(80, 98, 179) solid 1px;
+    transition: 0.2s;
+
+}
+
+#planets_s_b{
+    position: relative;
+    bottom: 0px;
+    width: 95%;
+    left: 2.5%;
+    height: 80px;
+    line-height: normal;
+}
+
+#line_o{
+    position: absolute;
+    top: 0px;
+    left: 15%;
+    width: 70%;
+    height: 1px;
+    background-color: aliceblue;
+    border-radius: 1px;
+}
+
+#p_text_1{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+}
+
+
+#dwarf_planets_s{
+    
+    height: 30px;
+    overflow: hidden;
+    width: 125px;
+    border-radius: 15px;
+    background: rgba(141, 141, 141, 0.2);
+    color: rgb(232, 234, 236);
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    outline: rgb(139, 139, 175) solid 1px;
+    transition: 0.2s;
+}
+
+#hypotetical_s{
+    
+    height: 30px;
+    overflow: hidden;
+    width: 107.5px;
+    border-radius: 15px;
+    background: rgba(141, 141, 141, 0.2);
+    color: rgb(232, 234, 236);
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    outline: rgb(101, 122, 66) solid 1px;
+    transition: 0.2s;
+}
+
+#moons_s{
+    
+    height: 30px;
+    overflow: hidden;
+    width: 65px;
+    border-radius: 15px;
+    background: rgba(141, 141, 141, 0.2);
+    color: rgb(232, 234, 236);
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    outline: rgb(134, 134, 134) solid 1px;
+    transition: 0.2s;
+}
+
+#asteroids_comets_meteors_s{
+
+    height: 30px;
+    overflow: hidden;
+    width: 223.5px;
+    border-radius: 15px;
+    background: rgba(141, 141, 141, 0.2);
+    color: rgb(232, 234, 236);
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    outline: rgb(189, 155, 132) solid 1px;
+    transition: 0.2s;
+
+}
+
+#sun_s{
+    
+    height: 30px;
+    overflow: hidden;
+    width: 71.8px;
+    border-radius: 15px;
+    background: rgba(141, 141, 141, 0.2);
+    color: rgb(232, 234, 236);
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    outline: rgb(161, 134, 76) solid 1px;
+    transition: 0.2s;
+}
+
+#beyond_our_solar_system_s{
+    
+    height: 30px;
+    overflow: hidden;
+    width: 208.6px;
+    border-radius: 15px;
+    background: rgba(141, 141, 141, 0.2);
+    color: rgb(232, 234, 236);
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    outline: rgb(148, 56, 110) solid 1px;
+    transition: 0.2s;
+}
